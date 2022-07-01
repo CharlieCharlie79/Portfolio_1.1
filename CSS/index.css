@@ -65,11 +65,10 @@ li
 
 @media screen and (max-width: 767px)
 {
-    
-    .nav-menu 
+    .nav-menu
     {
         position: fixed;
-        left:-100%;
+        left: -100%;
         top: 5rem;
         flex-direction: column;
         background-color: var(--second-secondary-color);
@@ -79,12 +78,10 @@ li
         transition: 0.3s;
     }
     
-    .nav-menu
-    {
-        left: 0;
-    }
-   
-
+   .showNav{
+    left: 0;
+   }
+  
    .hamburger {
     background-color: transparent;
     border: 0;
