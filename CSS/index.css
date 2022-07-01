@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Source+Serif+Pro:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #2C3639;
+    --secondary-color: #3F4E4F;
+    --second-secondary-color: #A27B5C;
+    --text-color: #DCD7C9;
+}
+
+body
+{
+    background-color: var(--main-bg-color);
+    color: #DCD7C9;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+a{
+    font-family: 'Source Serif Pro', serif; 
+    text-decoration: none;
+    color: var(--text-color) ;
+}
+
+li
+{
+   list-style-type: none; 
+}
+
+#navbar
+{
+    margin: 3% 5%;
+}
+
+.nav-menu 
+{
+    display:flex;    
+    padding: 30px;
+    justify-content: space-between;
+    background-color: var(--second-secondary-color); 
+}
+
+.nav-item a
+{
+    font-size: 2rem;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-item a:hover
+{
+    font-size: 2.5rem;
+    background-color: var(--secondary-color);
+}
+
+.hamburger
+{
+    display:none;
+}
+
+
+@media screen and (max-width: 767px)
+{
+    
+    .nav-menu 
+    {
+        position: fixed;
+        left:-100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: var(--second-secondary-color);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .nav-menu
+    {
+        left: 0;
+    }
+   
+
+   .hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: block;
+   }
+
+   .hamburger:focus {
+    outline: none;
+   }
+}
